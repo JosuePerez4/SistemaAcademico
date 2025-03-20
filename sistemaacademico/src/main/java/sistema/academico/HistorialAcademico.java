@@ -1,3 +1,7 @@
+package sistema.academico;
+
+import java.util.List;
+
 public class HistorialAcademico {
     Estudiante estudiante;
     List<Calificacion> calificaciones;

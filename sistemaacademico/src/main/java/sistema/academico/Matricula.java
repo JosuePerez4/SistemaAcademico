@@ -1,3 +1,5 @@
+package sistema.academico;
+
 import java.util.Date;
 import java.util.List;
 
@@ -60,4 +62,3 @@ public class Matricula {
         this.cursosInscritos = cursosInscritos;
     }
 }
-
