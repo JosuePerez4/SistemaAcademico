@@ -4,11 +4,11 @@ import java.util.Date;
 import java.util.List;
 
 public class Matricula {
-    Date fechaMatricula;
-    String estado;
-    Estudiante estudiante;
-    Semestre semestre;
-    List<Curso> cursosInscritos;
+    private Date fechaMatricula;
+    private String estado;
+    private Estudiante estudiante;
+    private Semestre semestre;
+    private Curso cursoInscrito;
 
     boolean registrarMatricula(Estudiante estudiante, Semestre semestre, List<Curso> cursos) {
         return false;
@@ -54,11 +54,11 @@ public class Matricula {
         this.semestre = semestre;
     }
 
-    public List<Curso> getCursosInscritos() {
-        return cursosInscritos;
+    public Curso getCursoInscrito() {
+        return cursoInscrito;
     }
 
-    public void setCursosInscritos(List<Curso> cursosInscritos) {
-        this.cursosInscritos = cursosInscritos;
+    public void setCursoInscrito(Curso cursoInscrito) {
+        this.cursoInscrito = cursoInscrito;
     }
 }

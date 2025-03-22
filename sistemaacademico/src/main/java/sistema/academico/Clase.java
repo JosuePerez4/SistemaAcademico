@@ -5,9 +5,9 @@ import java.util.Date;
 import java.util.List;
 
 public class Clase {
-    Date fecha;
-    Horario horario;
-    List<Asistencia> asistencias;
+    private Date fecha;
+    private Horario horario;
+    private Asistencia asistencia;
 
     void anadirCurso() {
     }
@@ -31,11 +31,11 @@ public class Clase {
         this.horario = horario;
     }
 
-    public List<Asistencia> getAsistencias() {
-        return asistencias;
+    public Asistencia getAsistencia() {
+        return asistencia;
     }
 
-    public void setAsistencias(List<Asistencia> asistencias) {
-        this.asistencias = asistencias;
+    public void setAsistencia(Asistencia asistencia) {
+        this.asistencia = asistencia;
     }
 }
