@@ -8,7 +8,7 @@ public class Estudiante {
     private boolean beca;
     private Date fechaIngreso;
     private Date fechaEgreso;
-    private List<Curso> cursos;
+    private Curso curso;
 
     public void registrarEstudiante() {
         // Lógica para registrar un estudiante
@@ -41,7 +41,7 @@ public class Estudiante {
     }
 
     public List<Curso> consultarCursos() {
-        // Lógica para consultar los cursos inscritos
+        List<Curso> cursos = null;
         return cursos;
     }
 
@@ -85,12 +85,12 @@ public class Estudiante {
         this.fechaEgreso = fechaEgreso;
     }
 
-    public List<Curso> getCursos() {
-        return cursos;
+    public Curso getCurso() {
+        return curso;
     }
 
-    public void setCursos(List<Curso> cursos) {
-        this.cursos = cursos;
+    public void setCurso(Curso curso) {
+        this.curso = curso;
     }
 }
 

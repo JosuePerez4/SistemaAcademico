@@ -7,7 +7,7 @@ public class Docente {
     private String tituloProfesional;
     private String aniosExperiencia;
     private String tipoContrato;
-    private List<Curso> cursos;
+    private Curso curso;
 
     public void registrarDocente() {
         // Lógica para registrar un docente
@@ -25,12 +25,9 @@ public class Docente {
         // Lógica para asignar un curso
     }
 
-    public void crearEvaluacion(Evaluacion evaluacion) {
-        // Lógica para crear una evaluación
-    }
-
     public List<Curso> consultarCursos() {
         // Lógica para consultar los cursos asignados
+        List<Curso> cursos = null;
         return cursos;
     }
 
@@ -74,12 +71,12 @@ public class Docente {
         this.tipoContrato = tipoContrato;
     }
 
-    public List<Curso> getCursos() {
-        return cursos;
+    public Curso getCurso() {
+        return curso;
     }
 
-    public void setCursos(List<Curso> cursos) {
-        this.cursos = cursos;
+    public void setCurso(Curso curso) {
+        this.curso = curso;
     }
 }
 

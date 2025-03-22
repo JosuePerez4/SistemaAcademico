@@ -4,15 +4,15 @@ import java.util.List;
 import java.sql.Time;
 
 public class Curso {
-    String nombre;
-    String descripcion;
-    String codigo;
-    Materia materia;
-    int cupoMaximo;
-    int semestre;
-    List<Clase> clases;
-    List<Calificacion> calificaciones;
-    List<Estudiante> estudiantes;
+    private String nombre;
+    private String descripcion;
+    private String codigo;
+    private Materia materia;
+    private int cupoMaximo;
+    private int semestre;
+    private Clase clase;
+    private Calificacion calificacion;
+    private Estudiante estudiante;
 
     void crearCurso() {
     }
@@ -94,27 +94,27 @@ public class Curso {
         this.semestre = semestre;
     }
 
-    public List<Clase> getClases() {
-        return clases;
+    public Clase getClase() {
+        return clase;
     }
 
-    public void setClases(List<Clase> clases) {
-        this.clases = clases;
+    public void setClase(Clase clase) {
+        this.clase = clase;
     }
 
-    public List<Calificacion> getCalificaciones() {
-        return calificaciones;
+    public Calificacion getCalificacion() {
+        return calificacion;
     }
 
-    public void setCalificaciones(List<Calificacion> calificaciones) {
-        this.calificaciones = calificaciones;
+    public void setCalificacion(Calificacion calificacion) {
+        this.calificacion = calificacion;
     }
 
-    public List<Estudiante> getEstudiantes() {
-        return estudiantes;
+    public Estudiante getEstudiante() {
+        return estudiante;
     }
 
-    public void setEstudiantes(List<Estudiante> estudiantes) {
-        this.estudiantes = estudiantes;
+    public void setEstudiante(Estudiante estudiante) {
+        this.estudiante = estudiante;
     }
 }
