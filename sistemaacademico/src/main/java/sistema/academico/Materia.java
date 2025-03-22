@@ -3,13 +3,13 @@ package sistema.academico;
 import java.util.List;
 
 public class Materia {
-    String nombre;
-    List<Materia> prerrequisitos;
-    String codigo;
-    String descripcion;
-    int creditos;
-    List<String> temario;
-    List<Curso> cursos;
+    private String nombre;
+    private List<Materia> prerrequisitos;
+    private String codigo;
+    private String descripcion;
+    private int creditos;
+    private List<String> temario;
+    private Curso curso;
 
     boolean agregarPrerrequisito(Materia materia) {
         return false;
@@ -75,11 +75,11 @@ public class Materia {
         this.temario = temario;
     }
 
-    public List<Curso> getCursos() {
-        return cursos;
+    public Curso getCurso() {
+        return curso;
     }
 
-    public void setCursos(List<Curso> cursos) {
-        this.cursos = cursos;
+    public void setCurso(Curso curso) {
+        this.curso = curso;
     }
 }
