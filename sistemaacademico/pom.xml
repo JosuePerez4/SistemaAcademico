@@ -4,7 +4,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.12</version>
+        <version>3.4.4</version>
         <relativePath/>
         <!--  lookup parent from repository  -->
     </parent>
@@ -14,7 +14,7 @@
     <name>sistemaacademico</name>
     <description>Microservices project with Spring Boot and Eureka</description>
     <properties>
-        <java.version>24</java.version>
+        <java.version>2</java.version>
         <spring-restdocs.version>3.0.1</spring-restdocs.version>
         <spring-cloud.version>2025.0.0-M2</spring-cloud.version>
         <hibernate.version>6.4.4.Final</hibernate.version>
