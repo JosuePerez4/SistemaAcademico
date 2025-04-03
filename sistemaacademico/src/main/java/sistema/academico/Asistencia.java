@@ -2,7 +2,12 @@ package sistema.academico;
 
 import java.util.Date;
 
+import jakarta.persistence.*;
+
 public class Asistencia {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private Estado estado;
     private Estudiante estudiante;
     private Date fecha;
